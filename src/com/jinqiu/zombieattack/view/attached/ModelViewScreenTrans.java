@@ -46,20 +46,20 @@ public class ModelViewScreenTrans {
 	 */
 	public static void initialize(int screenWidth, int screenHeight) {
 		if (!initialized) {
-			Log.d("screen size", screenWidth + " " + screenHeight);
+//			Log.d("screen size", screenWidth + " " + screenHeight);
 			viewToScreenTransformation = new FrameTransformation(
 					VIEW_FRAME_WIDTH, VIEW_FRAME_HEIGHT, screenWidth,
 					screenHeight, new PointF(0, 0));
-			Log.d("view to screen scale", viewToScreenTransformation.getScale()
-					+ "");
+//			Log.d("view to screen scale", viewToScreenTransformation.getScale()
+//					+ "");
 			modelToScreenTransformation = new FrameTransformation(
 					GAME_FRAME_WIDTH, GAME_FRAME_HEIGHT, GAME_IN_VIEW_WIDTH,
 					GAME_IN_VIEW_HEIGHT, GAME_IN_VIEW_SHIFT);
 
 			modelToScreenTransformation = modelToScreenTransformation
 					.addFrameTransformation(viewToScreenTransformation);
-			Log.d("model to screen scale",
-					modelToScreenTransformation.getScale() + "");
+//			Log.d("model to screen scale",
+//					modelToScreenTransformation.getScale() + "");
 
 			screenToModelTransformation = modelToScreenTransformation
 					.getBackwardTransformation();

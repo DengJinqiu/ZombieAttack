@@ -23,7 +23,7 @@ public abstract class Menu<K> extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Log.d("on menu create", "start");
+//		Log.d("on menu create", "start");
 		// lock the screen
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -43,7 +43,7 @@ public abstract class Menu<K> extends Activity {
 
 		initializeViewComponentManager();
 		this.addContentView(viewComponentManager, p);
-		Log.d("on menu create", "end");
+//		Log.d("on menu create", "end");
 	}
 
 	/** Initialize view component manager */

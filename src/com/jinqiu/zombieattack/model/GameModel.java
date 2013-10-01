@@ -94,12 +94,12 @@ public class GameModel {
 			public void runIfNotPaused() {
 
 				long t1 = new Date().getTime();
-				Log.d("Start update entity and effct", "...");
+//				Log.d("Start update entity and effct", "...");
 				updateCount++;
 				getExpirableObjectManager().updateEntityAndEffect();
 
 				long t2 = new Date().getTime();
-				Log.d("End update entity and effct", (t2 - t1) + " ms");
+//				Log.d("End update entity and effct", (t2 - t1) + " ms");
 
 				if (updateCount
 						% (getZombieGenerator().getAddNewZombieFre() / UPDATE_FREQUENCY) == 1) {
@@ -126,7 +126,7 @@ public class GameModel {
 				isGameEnd();
 
 				long t3 = new Date().getTime();
-				Log.d("End add new zombie", (t3 - t2) + " ms");
+//				Log.d("End add new zombie", (t3 - t2) + " ms");
 
 				updateGame();
 

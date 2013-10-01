@@ -72,7 +72,7 @@ public class GamePlay extends Menu<GamePlay.ViewComponentTypes> {
 
 	@Override
 	protected void onPause() {
-		Log.d("on pause", "");
+//		Log.d("on pause", "");
 		gameModel.pauseGame();
 		super.onPause();
 	}
@@ -81,7 +81,7 @@ public class GamePlay extends Menu<GamePlay.ViewComponentTypes> {
 	protected void onResume() {
 		// register this class as a listener for the orientation and
 		// accelerometer sensors
-		Log.d("on resume", "");
+//		Log.d("on resume", "");
 		sensorEventListenerImpl = new SensorEventListenerImpl();
 		sensorManager.registerListener(sensorEventListenerImpl,
 				sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
@@ -101,7 +101,7 @@ public class GamePlay extends Menu<GamePlay.ViewComponentTypes> {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Log.d("on create", "");
+//		Log.d("on create", "");
 
 		// add buttons
 		addViewComponent(ViewComponentTypes.GAME_PLAY_BACKGROUND, new Texture(
@@ -146,7 +146,7 @@ public class GamePlay extends Menu<GamePlay.ViewComponentTypes> {
 
 	@Override
 	protected void onStop() {
-		Log.d("on stop", "");
+//		Log.d("on stop", "");
 		gameModel.endGame();
 
 		unregisterReceiver(broadcastReceiver);
@@ -157,7 +157,7 @@ public class GamePlay extends Menu<GamePlay.ViewComponentTypes> {
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-		Log.d("on touch", "");
+//		Log.d("on touch", "");
 		super.onTouchEvent(event);
 
 		PointF touchPoint = new PointF(event.getX(), event.getY());
@@ -222,15 +222,15 @@ public class GamePlay extends Menu<GamePlay.ViewComponentTypes> {
 
 	/** Start new game */
 	private void startNewGame() {
-		Log.d("game play screen", "Start a new game");
+//		Log.d("game play screen", "Start a new game");
 		gameModel = new GameModel();
-		Log.d("Score", gameModel.getScore() + "");
+//		Log.d("Score", gameModel.getScore() + "");
 		startNextLevel();
 	}
 
 	/** Start the next level */
 	private void startNextLevel() {
-		Log.d("game play screen", "Start a new Level");
+//		Log.d("game play screen", "Start a new Level");
 
 		gameModel.startNextLevel();
 		gameModel.pauseGame();
