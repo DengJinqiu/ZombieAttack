@@ -29,10 +29,10 @@ proguard/
 .idea/
 
 # remove resource
-res/drawable-hdpi/
-res/drawable-ldpi/
-res/drawable-mdpi/
-res/drawable-xhdpi/
-
-ZombieAttack.apk
-zombieattack_release_key
+# res/drawable-hdpi/
+# res/drawable-ldpi/
+# res/drawable-mdpi/
+# res/drawable-xhdpi/
+# 
+# ZombieAttack.apk
+# zombieattack_release_key
