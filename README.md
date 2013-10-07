@@ -1,3 +1,3 @@
 ZombieAttack
 ============
-This is an Android Game
+The source code of a Android Game called Zombie Attack
