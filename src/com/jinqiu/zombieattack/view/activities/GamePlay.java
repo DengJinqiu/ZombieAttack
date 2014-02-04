@@ -13,9 +13,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
-import android.view.WindowManager;
 
 import com.jinqiu.zombieattack.listener.ModelListener;
 import com.jinqiu.zombieattack.model.ExpirableObjectType;

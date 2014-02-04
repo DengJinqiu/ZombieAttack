@@ -1,11 +1,8 @@
 package com.jinqiu.zombieattack.model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Timer;
-
-import android.util.Log;
 
 import com.jinqiu.zombieattack.listener.ExpirableObjectManagerListener;
 import com.jinqiu.zombieattack.listener.ModelListener;
@@ -93,12 +90,12 @@ public class GameModel {
 			@Override
 			public void runIfNotPaused() {
 
-				long t1 = new Date().getTime();
+//				long t1 = new Date().getTime();
 //				Log.d("Start update entity and effct", "...");
 				updateCount++;
 				getExpirableObjectManager().updateEntityAndEffect();
 
-				long t2 = new Date().getTime();
+//				long t2 = new Date().getTime();
 //				Log.d("End update entity and effct", (t2 - t1) + " ms");
 
 				if (updateCount
@@ -125,7 +122,7 @@ public class GameModel {
 
 				isGameEnd();
 
-				long t3 = new Date().getTime();
+//				long t3 = new Date().getTime();
 //				Log.d("End add new zombie", (t3 - t2) + " ms");
 
 				updateGame();

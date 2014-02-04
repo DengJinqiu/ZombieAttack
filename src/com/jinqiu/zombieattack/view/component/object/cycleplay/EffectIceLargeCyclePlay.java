@@ -1,9 +1,9 @@
 package com.jinqiu.zombieattack.view.component.object.cycleplay;
 
 import java.util.Arrays;
-import com.jinqiu.zombieattack.view.activities.R;
 
 import com.jinqiu.zombieattack.model.objectstate.ExpirableObjectState;
+import com.jinqiu.zombieattack.view.activities.R;
 
 public class EffectIceLargeCyclePlay extends CyclePlay {
 

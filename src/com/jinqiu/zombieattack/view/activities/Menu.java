@@ -3,7 +3,6 @@ package com.jinqiu.zombieattack.view.activities;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Display;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;

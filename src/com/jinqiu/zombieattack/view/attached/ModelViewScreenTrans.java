@@ -1,7 +1,6 @@
 package com.jinqiu.zombieattack.view.attached;
 
 import android.graphics.PointF;
-import android.util.Log;
 
 import com.jinqiu.zombieattack.model.GameModel;
 
